@@ -19,7 +19,19 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/custom.css">
+  <style type="text/css">
+    
+    body {
+       display: none;
+    }
+  </style>
+  <script type="text/javascript">
+      window.setInterval(showPage, 10000);
   
+      function showPage() {
+        $('body').show();
+      }
+  </script>
 
 </head>
 
@@ -528,7 +540,7 @@
             }
 
             if(ok){
-                setTimeout(showMensaje, 6000);
+                setTimeout(showMensaje, 10000);
             }
         }
 
