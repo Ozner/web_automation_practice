@@ -24,9 +24,13 @@
     body {
        display: none;
     }
+
+    #loader{
+      display:none;
+    }
   </style>
   <script type="text/javascript">
-      window.setInterval(showPage, 10000);
+      windo.setInterval(showPage, 10000);
   
       function showPage() {
         $('body').show();
@@ -329,6 +333,7 @@
                             <textarea class="form-control" name="txt" rows="3"></textarea>
                         </div>
                       <button type="button" class="btn btn-primary" name="enviar">Enviar</button>
+                      <img src="">
                       <hr>
                       <div class="alert alert-success" role="alert" id="msg1">
                             Los datos se enviaron correctamente! 
@@ -540,6 +545,7 @@
             }
 
             if(ok){
+                $('#loader').show();
                 setTimeout(showMensaje, 9000);
             }
         }
@@ -558,15 +564,9 @@
 
         function  showMensaje(){
             $('#msg1').show();
+            $('#loader').hide();
         }
-
-
     });
-
-    
-
   </script>
-
 </body>
-
 </html>
